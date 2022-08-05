@@ -1,0 +1,38 @@
+@use "../../../scss/" as *;
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding;
+    gap: 160px;
+    text-align: left;
+}
+
+.about-images {
+    display: flex;
+
+    > :nth-child(1) {
+        padding-top: 105px;
+        padding-right: 38px;
+    }
+
+    > :nth-child(2) {
+        padding-bottom: 105px;
+    }
+}
+
+.about-texts {
+    padding-top: 77px;
+
+    > :nth-child(1) {
+        font-size: 50px;
+        font-family: $orbitron;
+        padding-bottom: 20px;
+    }
+
+    > :nth-child(2) {
+        font-size: $subtitle;
+        font-family: $open-sans;
+        padding-bottom: 44px;
+    }
+}
