@@ -1,0 +1,59 @@
+@use "../../../scss/" as *;
+
+.hero {
+    padding: $padding;
+
+    &__navigation {
+        padding-top: $p-10;
+    }
+
+    &__title {
+        width: 50%;
+        margin: auto;
+        font-size: 70px;
+        font-family: $orbitron;
+        padding-top: 77px;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        font-family: $orbitron;
+        font-size: $title;
+        cursor: pointer;
+
+        > * {
+            color: $primary;
+        }
+    }
+
+    > :nth-child(2) {
+        display: flex;
+        gap: 2.5rem;
+        font-family: $open-sans;
+
+        > * {
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-family: $orbitron;
+        font-size: $subtitle;
+        border-bottom: solid 2px black;
+        width: 80px;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary;
+            border-bottom: solid 2px $primary;
+        }
+    }
+}

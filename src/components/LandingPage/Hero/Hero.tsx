@@ -1,0 +1,16 @@
+import Button from "../../Button";
+import Images from "./Images";
+import Navigation from "./Navigation";
+
+export default function Hero() {
+    return (
+        <div className="hero">
+            <div className="hero__navigation">
+                <Navigation />
+            </div>
+            <div className="hero__title">Make your interior extraordinary</div>
+            <Images />
+            <Button />
+        </div>
+    );
+}
