@@ -9,8 +9,10 @@ export default function Hero() {
                 <Navigation />
             </div>
             <div className="hero__title">Make your interior extraordinary</div>
-            <Images />
-            <Button />
+            <div className="hero__group-images">
+                <Button />
+                <Images />
+            </div>
         </div>
     );
 }
