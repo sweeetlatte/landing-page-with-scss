@@ -10,7 +10,10 @@ export default function Hero() {
             </div>
             <div className="hero__title">Make your interior extraordinary</div>
             <div className="hero__group-images">
-                <Button />
+                <Button
+                    text="Scroll Down Scroll Down&nbsp;"
+                    icon="arrow-down"
+                />
                 <Images />
             </div>
         </div>

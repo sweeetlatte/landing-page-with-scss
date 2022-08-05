@@ -84,35 +84,3 @@
         right: 0;
     }
 }
-
-.group-images {
-    &__button {
-        position: relative;
-        overflow: hidden;
-        height: 11vw;
-        width: 11vw;
-        z-index: 5;
-
-        > :nth-child(1) {
-            width: 50vw;
-        }
-
-        > :nth-child(1) textPath {
-            font-size: 40px;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 20px;
-            fill: #111;
-            background: #333;
-        }
-
-        .arrow-down-container {
-            position: absolute;
-            left: calc(5.5vw - 18px);
-            top: calc(5.5vw - 20px);
-            z-index: 10;
-            height: fit-content;
-            width: fit-content;
-        }
-    }
-}

@@ -1,14 +1,19 @@
-import React from "react";
 import Icons from "./Icons";
 
-export default function Button() {
+interface Props {
+    text: string;
+    icon: string;
+}
+
+export default function Button({ text, icon }: Props) {
     const handleOnClick = () => {};
 
     return (
-        <div className="group-images__button" onClick={handleOnClick}>
-            <Icons.CircleText />
+        <div className="button" onClick={handleOnClick}>
+            <Icons.CircleText text={text} />
             <div className="arrow-down-container">
-                <Icons.ArrowDown />
+                {icon === "arrow-down" && <Icons.ArrowDown />}
+                {icon === "arrow-right" && <Icons.ArrowRight />}
             </div>
         </div>
     );
