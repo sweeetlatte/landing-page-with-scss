@@ -3,15 +3,24 @@ $padding: 0 8.438rem;
 $p-10: 2.5rem; // 40px
 
 // colors:
-$primary: #FF7433;
-$primary-variant: #F1DBC4;
-$background: #FFF5EC;
+$primary: #ff7433;
+$primary-variant: #f1dbc4;
+$background: #fff5ec;
 $background-inverse: #181716;
 
 // fonts:
-$orbitron: 'Orbitron', sans-serif;
-$open-sans: 'Open Sans', sans-serif;
+$orbitron: "Orbitron", sans-serif;
+$open-sans: "Open Sans", sans-serif;
 
 // font size:
-$title: 24px;
-$subtitle: 18px;
+@mixin headline2 {
+    font-size: 50px;
+    font-family: $orbitron;
+}
+
+$headline5: 24px;
+
+@mixin headline6 {
+    font-size: 18px;
+    font-family: $open-sans;
+}

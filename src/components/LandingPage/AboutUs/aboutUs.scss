@@ -25,14 +25,12 @@
     padding-top: 77px;
 
     > :nth-child(1) {
-        font-size: 50px;
-        font-family: $orbitron;
+        @include headline2;
         padding-bottom: 20px;
     }
 
     > :nth-child(2) {
-        font-size: $subtitle;
-        font-family: $open-sans;
+        @include headline6;
         padding-bottom: 44px;
     }
 }
