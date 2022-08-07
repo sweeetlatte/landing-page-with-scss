@@ -1,0 +1,52 @@
+@use "../../../scss/" as *;
+
+.project {
+    background-color: #181716;
+    color: white;
+    padding: $padding;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    position: relative;
+
+    > :nth-child(1) {
+        width: 50%;
+    }
+    > :nth-child(3) {
+        position: absolute;
+        right: 8%;
+        bottom: 8%;
+    }
+}
+
+.proj-texts {
+    text-align: left;
+
+    > :nth-child(1) {
+        @include headline2;
+        padding-bottom: 20px;
+    }
+
+    > :nth-child(2) {
+        @include headline6;
+    }
+}
+
+.proj-images {
+    display: flex;
+    position: relative;
+
+    > :nth-child(1) {
+        padding-top: 158px;
+    }
+    > :nth-child(2) {
+        position: absolute;
+        right: 32%;
+        padding-top: 76px;
+        padding-bottom: 76px;
+    }
+    > :nth-child(3) {
+        position: absolute;
+        right: 0;
+        padding-bottom: 158px;
+    }
+}

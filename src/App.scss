@@ -19,8 +19,7 @@
     > :nth-child(1) textPath {
         font-size: 40px;
         font-family: $open-sans;
-        fill: #111;
-        background: #333;
+        fill: $background-inverse;
     }
 
     .arrow-down-container {
