@@ -1,0 +1,20 @@
+@use "../../../scss/" as *;
+
+.testimonial {
+    padding: $padding;
+
+    > :nth-child(1) {
+        padding-bottom: 76px;
+    }
+}
+
+.testimonial-texts {
+    > :nth-child(1) {
+        @include headline2;
+        padding-bottom: 20px;
+    }
+
+    > :nth-child(2) {
+        @include headline6;
+    }
+}
