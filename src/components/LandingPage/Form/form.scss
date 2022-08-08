@@ -1,0 +1,37 @@
+@use "../../../scss/" as *;
+
+.form {
+    text-align: left;
+    padding: $padding;
+
+    & .title {
+        width: 33.33%;
+        @include headline2;
+    }
+
+    & form {
+        padding-top: 70px;
+
+        & div {
+            & label {
+                @include headline6;
+            }
+
+            & input,
+            & textarea {
+                margin-top: 65px;
+                font-size: 16px;
+                font-family: $open-sans;
+                width: 100%;
+                background-color: $background;
+                border: none;
+                border-bottom: solid 2px $primary-variant;
+            }
+        }
+
+        > :nth-child(4) {
+            margin: 0 auto;
+            margin-top: 38px;
+        }
+    }
+}
