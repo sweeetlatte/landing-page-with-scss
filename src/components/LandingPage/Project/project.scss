@@ -35,18 +35,23 @@
     display: flex;
     position: relative;
 
-    > :nth-child(1) {
-        padding-top: 158px;
+    > * {
+        box-shadow: 10px 10px 18px rgba(255, 116, 51, 0.24);
     }
+
+    > :nth-child(1) {
+        margin-top: 158px;
+    }
+
     > :nth-child(2) {
         position: absolute;
         right: 32%;
-        padding-top: 76px;
-        padding-bottom: 76px;
+        margin-top: 76px;
+        margin-bottom: 76px;
     }
     > :nth-child(3) {
         position: absolute;
         right: 0;
-        padding-bottom: 158px;
+        margin-bottom: 158px;
     }
 }
