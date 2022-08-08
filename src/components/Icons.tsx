@@ -73,6 +73,54 @@ const CircleText = ({ text }: Props) => (
     </svg>
 );
 
-const Icons = { ArrowDown, ArrowRight, CircleText };
+const StraightArrowLeft = ({ stroke = "black" }: Props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="15.325"
+        height="12.708"
+        viewBox="0 0 15.325 12.708"
+    >
+        <path
+            id="Vector_11"
+            data-name="Vector 11"
+            d="M0,5.647H14.118M0,5.647,5.647,0M0,5.647l5.647,5.647"
+            transform="translate(0.707 0.707)"
+            fill="none"
+            stroke={stroke}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+        />
+    </svg>
+);
+
+const StraightArrowRight = ({ stroke = "white" }: Props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="15.325"
+        height="12.708"
+        viewBox="0 0 15.325 12.708"
+    >
+        <path
+            id="Vector_11"
+            data-name="Vector 11"
+            d="M0-5.647H14.118M0-5.647,5.647,0M0-5.647l5.647-5.647"
+            transform="translate(14.618 0.707) rotate(180)"
+            fill="none"
+            stroke={stroke}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+        />
+    </svg>
+);
+
+const Icons = {
+    ArrowDown,
+    ArrowRight,
+    CircleText,
+    StraightArrowLeft,
+    StraightArrowRight,
+};
 
 export default Icons;
