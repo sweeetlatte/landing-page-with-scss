@@ -1,0 +1,43 @@
+@use "../../../scss/" as *;
+
+.footer {
+    background-color: $background-inverse;
+    color: white;
+
+    & .brand {
+        padding-top: 100px;
+        font-size: 24px;
+        font-family: $orbitron;
+
+        & span {
+            color: $primary;
+        }
+    }
+
+    & .email {
+        font-size: 24px;
+        font-family: $orbitron;
+        padding-bottom: 48px;
+    }
+
+    & .social {
+        @include headline6;
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+        padding-bottom: 30px;
+    }
+
+    & .copyright {
+        display: flex;
+        font-size: 14px;
+        font-family: $open-sans;
+        justify-content: center;
+        border-top: 1px solid #322f2c;
+
+        & * {
+            padding: 18px 36px;
+            border: 1px solid #322f2c;
+        }
+    }
+}
