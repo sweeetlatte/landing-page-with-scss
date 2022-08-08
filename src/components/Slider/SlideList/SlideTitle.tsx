@@ -12,7 +12,7 @@ export default function SlideTitle({ content, author, position }: Props) {
             <div className="title-content">{content}</div>
             <div>
                 <div className="title-author">{author}</div>
-                <div>{position}</div>
+                <div className="title-position">{position}</div>
             </div>
         </div>
     );
